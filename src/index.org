@@ -26,11 +26,13 @@
    one is the text area to write your proramms and second one is the
    interactive mode of racket.
    
+
 ** Choose your language
    Racket is a family of languages and hence DrRacket the programming
    environment needs a prior information on which language to
    interpret.  Set it to =#lang racket= Click =Run= button towards top
    right. 
+
 
 ** Interact with Racket 
    DrRacket has a text area bottom, which is the racket command-line. You 
@@ -44,7 +46,8 @@
    #+END_SRC
    Thats how you will interact with Racket in rest of the tutorial.
 
-** Add two number interacting in racket command-line 
+
+** Add two numbers interacting in racket command-line 
    See the example given below -
    #+BEGIN_SRC racket
    > (+ 2 7)
@@ -54,8 +57,45 @@
    and 7.  This is similiar to calling a function which say =func-name
    arg1 arg2 argN= This shows that almost eveything defined in racket
    is a procedure.
+   Lets see what would happen without parenthesis -
+   #+BEGIN_SRC racket
+   > + 2 7
+   #<procedure:+>
+   2 
+   7 
+   #+END_SRC
+   + Observe how racket is interpreting each of those (opeartor, and
+     two constants) Its takes all of them i.e. +, 2 and 9 as an
+     argument to some hidden function and interpret them as it was
+     done in previous section.
+   + As expected =2 and 7= are evaluated to themselves as they are
+     constants.
+   + =+= is evaluated as a procedure =#<procedure:+>= A function and
+     when wrapped around parenthesis, it becomes a single expression
+     and is evaluted.
+   + So if I just give =+= to racket is returns its behavior in the
+     program.
+     #+BEGIN_SRC racket
+     > +
+     #<procedure:+>
+     #+END_SRC
 
-     
+
+** Lets write a slightly complex expression
+   Mathmatically we want to calculate x = (2 + 7) * (8 + 6).
+   Lets write it in racket. 
+   #+BEGIN_SRC racket 
+   > (* (+> (* (+ 2 7) (+ 8 6))
+   126
+   #+END_SRC
+   Know BODMAS and its easy. Inner brackets are evaluated first and then results 
+   are evaulated further.
+   It can also see as this way
+   + procedure (+ 2 7) eavalutes and returns 9
+   + procedure (+ 8 6) evaluetes and returns 14
+   + 9 and 14 become arguments to procedure * and and returns 126
+   + =3 function calls= 
+
 
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
