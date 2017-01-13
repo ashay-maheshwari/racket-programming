@@ -85,7 +85,7 @@
    Mathmatically we want to calculate x = (2 + 7) * (8 + 6).
    Lets write it in racket. 
    #+BEGIN_SRC racket 
-   > (* (+> (* (+ 2 7) (+ 8 6))
+   > (* (+ 2 7) (+ 8 6))
    126
    #+END_SRC
    Know BODMAS and its easy. Inner brackets are evaluated first and then results 
