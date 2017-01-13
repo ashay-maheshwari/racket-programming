@@ -88,15 +88,33 @@
    > (* (+ 2 7) (+ 8 6))
    126
    #+END_SRC
-   Know BODMAS and its easy. Inner brackets are evaluated first and then results 
-   are evaulated further.
-   It can also see as this way
+   Know BODMAS and its easy. Inner brackets are evaluated first and
+   then results are evaulated further.
+   It can also be seen as -
    + procedure (+ 2 7) eavalutes and returns 9
    + procedure (+ 8 6) evaluetes and returns 14
    + 9 and 14 become arguments to procedure * and and returns 126
    + =3 function calls= 
 
-
+** Define a varible 
+   You need variables in a programming languages and in racket you do it 
+   using =define= keyword 
+   #+BEGIN_SRC racket 
+   > (define <identifier-name> <value>
+   > (define name "ashay")   
+   > name 
+   "ashay"
+   #+END_SRC
+   + Here, =define= is a keyword, =name= is a keyword and =ashay= is value
+     binded to =name=
+   + =name= evaluates to =ashay=
+   + Note ::
+     You cannot define a variable which is not assigned/binded to a value
+     #+BEGIN_SRC racket 
+     >(define name)
+     . define: bad syntax (missing expression after identifier) in: (define name) 
+     #+END_SRC
+    
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
