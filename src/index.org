@@ -47,10 +47,19 @@
    Thats how you will interact with Racket in rest of the tutorial.
 
 
+** Comments in racket 
+   Use semilcolon ; to comment in racket 
+   #+BEGIN_SRC racket
+   > ;this is comment 
+     2
+   2
+   #+END_SRC
+
+
 ** Add two numbers interacting in racket command-line 
    See the example given below -
    #+BEGIN_SRC racket
-   > (+ 2 7)
+   > (+ 2 7) ; add 2 with 7
    9
    #+END_SRC
    Observe that the operator is first and then comes two arguments 2
@@ -59,7 +68,7 @@
    is a procedure.
    Lets see what would happen without parenthesis -
    #+BEGIN_SRC racket
-   > + 2 7
+   > + 2 7 ; evaluate +, then 2 and then 7
    #<procedure:+>
    2 
    7 
@@ -76,7 +85,7 @@
    + So if I just give =+= to racket is returns its behavior in the
      program.
      #+BEGIN_SRC racket
-     > +
+     > + ; evaluate + with no arguments 
      #<procedure:+>
      #+END_SRC
 
@@ -85,7 +94,7 @@
    Mathmatically we want to calculate x = (2 + 7) * (8 + 6).
    Lets write it in racket. 
    #+BEGIN_SRC racket 
-   > (* (+ 2 7) (+ 8 6))
+   > (* (+ 2 7) (+ 8 6)) 
    126
    #+END_SRC
    Know BODMAS and its easy. Inner brackets are evaluated first and
@@ -102,7 +111,7 @@
    using =define= keyword 
    #+BEGIN_SRC racket 
    > (define <identifier-name> <value>
-   > (define name "ashay")   
+   > (define name "ashay")    ; defines name to be "ashay"
    > name 
    "ashay"
    #+END_SRC
@@ -117,14 +126,6 @@
      #+END_SRC
     
 
-** Comments in racket 
-   Use semilcolon ; to comment in racket 
-   #+BEGIN_SRC racket
-   > ;this is comment 
-     2
-   2
-   #+END_SRC
-
 ** Data types in racket 
    Racket includes the following in-built data types 
    =numbers, booleans, strings and byte strings=
@@ -134,6 +135,8 @@
      #t, #f, true, false
    + Strings ::
      "hello", "this is a string", "anythings in double quotes"
+
+
 
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
