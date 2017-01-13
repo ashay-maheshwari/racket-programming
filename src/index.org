@@ -1,0 +1,11 @@
+#+Title: Racket programming 
+#+Date: January 13, 2017
+#+Author: Ashay Maheshwari 
+
+
+* Introduction
+  This is a quick note to re-learn/revise Racket programming.
+
+* References
+  [[https://docs.racket-lang.org/guide/][The Racket Guide]]
+
