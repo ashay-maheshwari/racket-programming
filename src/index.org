@@ -96,7 +96,8 @@
    + 9 and 14 become arguments to procedure * and and returns 126
    + =3 function calls= 
 
-** Define a varible 
+
+** Define a variable 
    You need variables in a programming languages and in racket you do it 
    using =define= keyword 
    #+BEGIN_SRC racket 
@@ -115,6 +116,25 @@
      . define: bad syntax (missing expression after identifier) in: (define name) 
      #+END_SRC
     
+
+** Comments in racket 
+   Use semilcolon ; to comment in racket 
+   #+BEGIN_SRC racket
+   > ;this is comment 
+     2
+   2
+   #+END_SRC
+
+** Data types in racket 
+   Racket includes the following in-built data types 
+   =numbers, booleans, strings and byte strings=
+   + Numbers :: Anything for integers, decimal points, fractional, long, complex, exponential
+     1, 1/2, 1+2i, 3.14, 6.02e+23, 999999999999
+   + Booleans ::
+     #t, #f, true, false
+   + Strings ::
+     "hello", "this is a string", "anythings in double quotes"
+
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
