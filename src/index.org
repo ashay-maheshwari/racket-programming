@@ -6,6 +6,32 @@
 * Introduction
   This is a quick note to re-learn/revise Racket programming.
 
-* References
-  [[https://docs.racket-lang.org/guide/][The Racket Guide]]
+* Install Racket/DrRacket
+  http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/
 
+* Racket tools 
+  + racket :: compiler, interpreter and run-time system 
+  + DrRacket :: Programming environment and IDE
+  + raco :: a command line tool to install packages and libraries.
+
+* Getting started 
+  Start your DrRacket and get started 
+
+** Meet DrRacket 
+   If you have Racket installed, you must have DrRacket IDE launcher
+   on Desktop.  Launching DrRacket gives two panes in the IDE.  First
+   one is the text area to write your proramms and second one is the
+   interactive mode of racket.
+   
+** Choose your language
+   Racket is a family of languages and hence DrRacket the programming
+   environment needs a prior information on which language to
+   interpret.  Set it to =#lang racket= Click =Run= button towards top
+   right. 
+
+
+
+
+* References
+  + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
+  + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
