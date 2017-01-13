@@ -138,6 +138,26 @@
 
 
 
+* Begin being intermediate expert in racket
+  =Getting Started= section was just a hello to racket. This section 
+  adds more details and expertise in you as a racket programming.
+
+** Save your code 
+   You can save your program in files with .rkt extenstion and run it
+   with command-line as shown below -
+   #+BEGIN_SRC racket
+   racket hello-world.rkt
+   #+END_SRC
+   See sample [[./scripts/hello-world.rkt]]
+
+** Where is my racket interpreter installed 
+   #+BEGIN_SRC shell
+   vlead@vlead-H81M-S:~$ whereis racket
+   racket: /usr/bin/racket /usr/lib/racket /usr/bin/X11/racket /usr/include/racket /usr/share/racket /usr/share/man/man1/racket.1.gz
+   vlead@vlead-H81M-S:~$ which racket  
+   /usr/bin/racket
+   #+END_SRC  
+
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
