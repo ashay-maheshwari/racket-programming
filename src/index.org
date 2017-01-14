@@ -16,7 +16,7 @@
   + DrRacket :: Programming environment and IDE
   + raco :: a command line tool to install packages and libraries.
 
-
+	    
 * Getting started 
   Lanuch DrRacket and get started 
 
@@ -124,7 +124,9 @@
      >(define name)
      . define: bad syntax (missing expression after identifier) in: (define name) 
      #+END_SRC
-    
+   + Racket syntax for identifiers is extreamly liberal. It excludes the 
+     following special characters ()[]{}","';#|\
+   + Sample identifiers +, Hfuhru, integer?, pass/fail
 
 ** Data types in racket 
    Racket includes the following in-built data types 
@@ -157,6 +159,7 @@
    vlead@vlead-H81M-S:~$ which racket  
    /usr/bin/racket
    #+END_SRC  
+
 
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
