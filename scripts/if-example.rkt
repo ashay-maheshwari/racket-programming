@@ -36,6 +36,7 @@
 ;; 2. if whose condition include another if which checks if it is string
 ;; 3. if arg i string, it checks if it is equal to "hello" and its substring from 0 to 5, if true then returns #t and hence returns hi
 ;; 4. else it returns #f and then returns "huh"
+
 (define (reply s)
 	(if (if (string? s)
 			(equal? "hello" (substring s 0 5))
