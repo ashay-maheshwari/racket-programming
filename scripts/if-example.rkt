@@ -26,5 +26,26 @@
       "huh?"))
 
 (reply "hello") ;returns hi
-(reply "hellow world") ; returns huh
-)reply 56) ;returns huh
+(reply "hellw world") ; returns huh
+(reply 56) ;returns huh
+
+
+;; this is the same if written in more complex form
+;; It evalutes as given below -
+;; 1. Takes string as an argument
+;; 2. if whose condition include another if which checks if it is string
+;; 3. if arg i string, it checks if it is equal to "hello" and its substring from 0 to 5, if true then returns #t and hence returns hi
+;; 4. else it returns #f and then returns "huh"
+(define (reply s)
+	(if (if (string? s)
+			(equal? "hello" (substring s 0 5))
+			#f)
+		"hi"
+		"huh"))
+
+
+(reply "hello") ;returns hi
+(reply "hellw world") ; returns huh
+(reply 56) ;returns huh
+
+
