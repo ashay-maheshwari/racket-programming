@@ -152,6 +152,7 @@
    #+END_SRC
    See sample [[./scripts/hello-world.rkt]]
 
+
 ** Where is my racket interpreter installed 
    #+BEGIN_SRC shell
    vlead@vlead-H81M-S:~$ whereis racket
@@ -161,6 +162,22 @@
    #+END_SRC  
 
 
+** Built functions 
+   [[./scripts/built-in-functions.rkt]]   
+
+** Conditions if and else 
+   #+BEGIN_SRC racket
+   (if <expr> <expr> <expr>)
+   #+END_SRC 
+   First expression is always evaluated, if produce non-#f, then
+   second and then so on based on the return values.
+   #+BEGIN_SRC racket 
+   #lang racket
+   (if (> 3 4)
+      "bigger"
+      "smaller")
+   "smaller"
+   #+END_SRC  
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
