@@ -44,9 +44,33 @@
 		"hi"
 		"huh"))
 
+(reply "hello") ;returns hi
+(reply "hellw world") ; returns huh
+(reply 56) ;returns huh
+
+
+
+
+;; this if has an example of and operator used inside if.
+;; and needs all true as a result of the expression. 
+;; takes a string as an argument, check if it is a string and its lenght is greater or equal to 5
+;; then checks if it is equal to "hello" and returns hi else huh
+define (reply s)
+  (if (and (string? s)
+           (>= (string-length s) 5)
+           (equal? "hello" (substring s 0 5)))
+      "hi"
+      "huh"))
 
 (reply "hello") ;returns hi
 (reply "hellw world") ; returns huh
 (reply 56) ;returns huh
+
+
+
+
+
+
+
 
 
