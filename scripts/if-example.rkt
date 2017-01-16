@@ -55,7 +55,7 @@
 ;; and needs all true as a result of the expression. 
 ;; takes a string as an argument, check if it is a string and its lenght is greater or equal to 5
 ;; then checks if it is equal to "hello" and returns hi else huh
-define (reply s)
+(define (reply s)
   (if (and (string? s)
            (>= (string-length s) 5)
            (equal? "hello" (substring s 0 5)))
@@ -67,6 +67,14 @@ define (reply s)
 (reply 56) ;returns huh
 
 
+;; identify if number is odd or even 
+(define (odd-even num1)
+  (if (equal? 0 (modulo num1 2))
+      "even" 
+      "odd"))
+
+
+ 
 
 
 
