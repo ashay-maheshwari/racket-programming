@@ -165,6 +165,7 @@
 ** Built functions 
    [[./scripts/built-in-functions.rkt]]   
 
+
 ** Conditions if and else 
    #+BEGIN_SRC racket
    (if <expr> <expr> <expr>)
@@ -178,6 +179,11 @@
       "smaller")
    "smaller"
    #+END_SRC  
+   [[./scripts/if-example.rkt][Sample example for if is given here]]
+
+** cond function 
+   [[./scripts/cond-example.rkt][Sample example for cond is given here]]
+
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
