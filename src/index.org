@@ -202,7 +202,7 @@
    Binding of let form are available only in th ebody of let. Hence
    any attempt to access binded variables will return undefiend error.
    To make the let binding accessible outside the body of let, use =let*=
-   [[
+   
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
