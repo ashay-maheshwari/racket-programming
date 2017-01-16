@@ -184,6 +184,19 @@
 ** cond function 
    [[./scripts/cond-example.rkt][Sample example for cond is given here]]
 
+** Local binding using let 
+   =let= binds many identifiers at once instead of an individual
+   define for each function/variable.
+   Exmaple is given below -
+   #+BEGIN_SRC racket 
+   (let ([x (random 4)]
+         [o (random 4)])
+     (cond 
+       [(> x o) "X wins"]
+       [(> o x) "O wins"]
+       [else "cat's game"]))
+   #+END_SRC
+  
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
