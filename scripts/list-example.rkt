@@ -9,3 +9,19 @@
 (append (list "hop" "skip") (list "jump")) ;;; combine lists 
 (reverse (list "jop" "skip" "jump")) ;;; reverse the elements in strings
 (member "fall" (list "hop" "skip" "jump")) ;; check if an element is a part of a list
+
+
+;; Iterating over a list 
+;; Evaluating a square root in list 
+(map sqrt (list 2 4 6 16)) ;; returns square root for each element of list
+
+;; Append a string to each element of the list 
+(map (lambda (i)
+       (string-append i "!"))
+     (list "peanuts" "popcorn" "burger"))
+;; returns '("peanuts!" "popcorn!" "burger!")
+
+
+;; filter function to filter elements from a list based on the functions 
+(filter string? (list "a" "b" 7))
+;; returns '("a" "b")

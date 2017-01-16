@@ -203,6 +203,16 @@
    any attempt to access binded variables will return undefiend error.
    To make the let binding accessible outside the body of let, use =let*=
    
+*** Looping in lists 
+    #+BEGIN_SRC racket
+    (map sqrt (list 1 4 9 16))
+    #+END_SRC
+    One can also filter elements based on certain conditions. 
+    
+    [[./scripts/list-example.rkt][Sample program]]
+      
+
+
 * References
   + [[https://docs.racket-lang.org/guide/][The Racket Guide]]
   + [[http://linuxg.net/how-to-install-drracket-on-ubuntu-12-04-ubuntu-12-10-and-ubuntu-13-04-by-the-command-line-interface/][Install DrRacket]]
