@@ -25,3 +25,12 @@
 ;; filter function to filter elements from a list based on the functions 
 (filter string? (list "a" "b" 7))
 ;; returns '("a" "b")
+
+
+
+;; user defined version of length of list 
+(define (my-length lst)
+    (cond
+      [(empty? lst) 0]
+      [(else (+ (my-length (rest lst))))]))
+
