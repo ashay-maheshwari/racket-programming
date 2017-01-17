@@ -8,6 +8,8 @@
       "not a number"))
 
 ;; A function which takes list as argument 
+;; returns a list with elements squared 
+;; every element calls square and returns the value 
 (define (map-sqr list-name)
    (if (empty? list-name)
        '()
