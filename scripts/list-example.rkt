@@ -34,3 +34,24 @@
       [(empty? lst) 0]
       [(else (+ (my-length (rest lst))))]))
 
+(my-length '(1 2 3 4 5)) ;; returns 5 
+
+
+;; user defined function to convert each element of string in uppercase 
+;; my-map function will use inbuit function named string-upcase to convert a string
+;; to upper case.
+;; my-map takes 2 arguments, one is string-upcase function, and a list to work on
+;; it checks if list is empty and returns an emtpy list ;
+;; else it checks construct a list by apply string-upcase function to first elemenet of list;
+;; and pass string-upcase and rest of list to my-ma again
+(define (my-map f lst)
+  (cond 
+   [(empty? lst) empty]
+   [else (cons (f (first lst))
+                (my-map f (rest lst)))]))
+
+
+(my-map string-upcase (list "ashay" "amit")) ;; returns '("ASHAY" "AMIT")
+
+
+
